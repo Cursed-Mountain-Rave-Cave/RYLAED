@@ -1967,6 +1967,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   one: {fileID: 8300000, guid: efa5236834584464694065a5af0ef66b, type: 3}
   two: {fileID: 8300000, guid: 7b945594ebff3a94192e7aa471b766e3, type: 3}
+  three: {fileID: 8300000, guid: 17169d5c87f501e41b299b27f3775357, type: 3}
+  four: {fileID: 8300000, guid: 199d6deb534835b4b8ad5b74872371d8, type: 3}
+  five: {fileID: 8300000, guid: 4e2d8e36641d26144a3a11e315f080c5, type: 3}
+  six: {fileID: 8300000, guid: 3cd030581aefa064684644e02fe59d0d, type: 3}
 --- !u!1001 &284756612
 PrefabInstance:
   m_ObjectHideFlags: 0

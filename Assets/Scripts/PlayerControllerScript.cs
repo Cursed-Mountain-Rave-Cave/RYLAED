@@ -21,6 +21,7 @@ public class PlayerControllerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
+        Cursor.visible = false;
         HandleLook();
         HandleMove();
         HandleSprint();

@@ -1,24 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-public class PlayButtonScript : MonoBehaviour
+
+public class ShackerScript : MonoBehaviour
 {
-    
     // Start is called before the first frame update
+    float time;
     void Start()
     {
-        
+        time = Time.time;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Cursor.visible = true;
-    }
-    public void OnClick()
-    {
-        SceneManager.LoadScene("Room1");
+        transform.rotation = Quaternion.Euler(0, 0, 10*Mathf.Sin(Time.time - time));
     }
 }

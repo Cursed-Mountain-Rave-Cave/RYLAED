@@ -11,7 +11,7 @@ public class PrintResultsScript : MonoBehaviour
         var record =  GlobalParams.record;
         Debug.Log("Before: " + GlobalParams.onlineRecord);
         GlobalParams.onlineRecord = Mathf.Min(GlobalParams.onlineRecord, Mathf.Max((record - Random.Range(0.5f, 1.5f)), 0.00001f));
-        text.text = "Вы прошли этот уровень за:\n" + record + " c.\n\nЛучший результат других игроков:\n" + GlobalParams.onlineRecord + " c.";
+        text.text = "Your time: " + record + " c.\n\nBest online time: " + GlobalParams.onlineRecord + " c.";
         Debug.Log(GlobalParams.onlineRecord);
         text.fontSize = 40;
         text.color = Color.red;

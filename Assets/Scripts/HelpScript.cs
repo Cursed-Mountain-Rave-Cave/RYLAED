@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-public class PlayButtonScript : MonoBehaviour
+public class HelpScript : MonoBehaviour
 {
     
     // Start is called before the first frame update
@@ -19,6 +19,6 @@ public class PlayButtonScript : MonoBehaviour
     }
     public void OnClick()
     {
-        SceneManager.LoadScene("Room1");
+        SceneManager.LoadScene("Help");
     }
 }

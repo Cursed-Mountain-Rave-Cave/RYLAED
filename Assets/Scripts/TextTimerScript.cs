@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class TextTimerScript : MonoBehaviour
 {
     public Text timerLabel;
-    private float time;
+    private float time = 0;
     private int fontSize;
     private float deadline = 15;
     // Start is called before the first frame update

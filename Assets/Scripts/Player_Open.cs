@@ -7,7 +7,7 @@ using System.Collections;
 public class Player_Open : MonoBehaviour
 {
     int pillsCount = 0;
-    int maxPillsCount = 3;
+    int maxPillsCount = 4;
     public float doorDistance = 3; // в приделах этой дистанции дверь будет доступна
     public float pillDistance = 3; // в приделах этой дистанции дверь будет доступна
     public string doorTag = "Door"; // тег двери

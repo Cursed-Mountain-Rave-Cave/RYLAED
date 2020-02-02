@@ -29,7 +29,7 @@ public class TextTimerScript : MonoBehaviour
         if (time >= 20)
             SceneManager.LoadScene("DedMenu");
         else
-            timerLabel.text = string.Format ("{0:00} : {1:00} : {2:000}", minutes, seconds, fraction);
+            timerLabel.text = string.Format ("{0:00} : {1:00} : {2:000}", minutes, 20 - seconds, 100 - fraction);
 
         if (time > deadline && time < 20) 
         {

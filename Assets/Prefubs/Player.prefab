@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4683501148808148386}
   - component: {fileID: 5263739104836918583}
   - component: {fileID: 2774388639673860026}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -108,8 +108,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8968ac62b74fd8e4795a63f377a739e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 5
+  doorDistance: 5
+  pillDistance: 5
   doorTag: Door
+  pillTag: Pill
   key: 102
 --- !u!1 &4683501150492526582
 GameObject:
@@ -126,7 +128,7 @@ GameObject:
   - component: {fileID: 4683501150492526577}
   - component: {fileID: 4683501150492526540}
   - component: {fileID: 4683501150492526543}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}

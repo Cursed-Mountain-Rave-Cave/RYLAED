@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Camera))]
 
@@ -8,6 +9,7 @@ public class Player_Open : MonoBehaviour
 {
     int pillsCount = 0;
     int maxPillsCount = 4;
+    public Text text;
     public float doorDistance = 3; // в приделах этой дистанции дверь будет доступна
     public float pillDistance = 3; // в приделах этой дистанции дверь будет доступна
     public string doorTag = "Door"; // тег двери
@@ -18,7 +20,7 @@ public class Player_Open : MonoBehaviour
 
     void Start() 
     {
-        time = Time.time;
+ 
     }
     void Awake()
     {
@@ -52,5 +54,6 @@ public class Player_Open : MonoBehaviour
                 }
             }
         }
+        text.text = "Pills collected: " + pillsCount + " / " + maxPillsCount;
     }
 }

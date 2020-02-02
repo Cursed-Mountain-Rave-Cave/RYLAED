@@ -20,7 +20,8 @@ public class Player_Open : MonoBehaviour
 
     void Start() 
     {
- 
+        time = Time.time;
+        //text.fontSize = 40;
     }
     void Awake()
     {
